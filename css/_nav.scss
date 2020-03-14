@@ -1,0 +1,56 @@
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    // background-color: rgba(0, 0, 0, 0.4);
+    background-color: $section-color;
+
+
+
+
+
+    ul {
+
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 15px 0;
+        justify-content: center;
+        // margin-left: 5%;
+
+        .logo {
+            height: 20px;
+
+        }
+
+
+
+
+
+
+        li a {
+            text-decoration: none;
+            font-size: 1em;
+            margin: 0px 30px;
+            padding: 5px 15px;
+            background-color: transparent;
+            color: white;
+            transition: .5s;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            border-bottom: 1px solid transparent;
+            text-transform: uppercase;
+
+
+            &:hover {
+                cursor: pointer;
+                border-bottom: 1px solid white;
+
+            }
+
+        }
+    }
+}

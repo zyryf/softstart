@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 1;
+  width: 100%;
+  background-color: #1B1B1B;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  padding: 15px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul .logo {
+  height: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  margin: 0px 30px;
+  padding: 5px 15px;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-bottom: 1px solid transparent;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/img/header_background.jpg");
+  background-position: 0 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 120px;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+          clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.product {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.technical-data {
+  height: 100vh;
+  background-color: #1B1B1B;
+  -webkit-transform: skew(0, 7deg);
+          transform: skew(0, 7deg);
+}
+
+.order {
+  height: 100vh;
+}
+
+.contact {
+  height: 100vh;
+  background-color: #1B1B1B;
+  -webkit-transform: skew(0, 7deg);
+          transform: skew(0, 7deg);
+}
+
+footer {
+  height: 50vh;
+}
+/*# sourceMappingURL=styles.css.map */
