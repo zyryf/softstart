@@ -1,1 +1,26 @@
-$section-color: #1B1B1B
+$section-color: #1B1B1B;
+
+
+
+
+
+//desktop
+@media (min-width: 1000px){
+    $nav-bar-top-position: 0px;
+
+
+}
+
+
+//mobile
+@media (max-width: 1000px){
+    $nav-bar-top-position: -200px;
+
+
+
+}
+
+
+
+//mobilka zamiast nav_bara, ma hamburgera z menu
+

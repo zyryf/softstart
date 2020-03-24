@@ -1,0 +1,23 @@
+[33mcommit 8680437c22cf6e4ea158ef6c570c69a7e1571558[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: szymon <szymon.borkowski@gmail.com>
+Date:   Sun Mar 15 21:43:48 2020 +0100
+
+    edit gitigonre
+
+[33mcommit 2d1c5988c9bdb7d0a3c8d6d4bfa220c3e76aa015[m
+Author: szymon <szymon.borkowski@gmail.com>
+Date:   Sun Mar 15 21:32:55 2020 +0100
+
+    add gitignore file
+
+[33mcommit b4c3e2019c736cfa8b3df584d26f8cb3c37ed32e[m
+Author: szymon <szymon.borkowski@gmail.com>
+Date:   Sun Mar 15 12:07:30 2020 +0100
+
+    change bad directories
+
+[33mcommit f7dd113d2fd71a6ec1075ce17d54b72f49849d1e[m
+Author: szymon <szymon.borkowski@gmail.com>
+Date:   Sat Mar 14 22:53:38 2020 +0100
+
+    initial commit
