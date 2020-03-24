@@ -188,6 +188,12 @@ footer {
   }
 }
 
+@media (min-width: 1000px) {
+  .logo-mobile {
+    display: none;
+  }
+}
+
 .hamburger {
   padding: 10px;
   position: fixed;

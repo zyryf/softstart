@@ -5,9 +5,17 @@ $(document).ready(function () {
     const productButton = $('#menu-product');
     const technicalDataButton = $('#menu-technical-data');
     const orderButton = $('#menu-order');
-    const contactButton =  document.querySelector('#menu-contact');
+    const contactButton =  $('#menu-contact');
     const navigation = document.querySelector('.navigation');
     const hamburger =  document.querySelector('.hamburger');
+
+    function turn_Off_Mobile_Nav_Bar(){
+        if(document.body.clientWidth < 1000){
+            navigation.classList.toggle('nav--active');
+            navigation.classList.toggle('navigation');
+            hamburger.classList.toggle('hamburger--active');
+            }
+    }
 
 
     startButton.on('click', function () {
@@ -15,9 +23,8 @@ $(document).ready(function () {
                 scrollTop: $("header").offset().top
             },
             'slow');
-            navigation.classList.toggle('nav--active');
-            navigation.classList.toggle('navigation');
-            hamburger.classList.toggle('hamburger--active');
+            turn_Off_Mobile_Nav_Bar();
+
     });
 
     productButton.on('click', function () {
@@ -25,9 +32,7 @@ $(document).ready(function () {
                 scrollTop: $(".product").offset().top
             },
             'slow');
-            navigation.classList.toggle('nav--active');
-            navigation.classList.toggle('navigation');
-            hamburger.classList.toggle('hamburger--active');
+            turn_Off_Mobile_Nav_Bar();
     });
 
     technicalDataButton.on('click', function () {
@@ -35,9 +40,7 @@ $(document).ready(function () {
                 scrollTop: $(".technical-data").offset().top
             },
             'slow');
-            navigation.classList.toggle('nav--active');
-            navigation.classList.toggle('navigation');
-            hamburger.classList.toggle('hamburger--active');
+            turn_Off_Mobile_Nav_Bar();
     });
 
     orderButton.on('click', function () {
@@ -45,9 +48,7 @@ $(document).ready(function () {
                 scrollTop: $(".order").offset().top
             },
             'slow');
-            navigation.classList.toggle('nav--active');
-            navigation.classList.toggle('navigation');
-            hamburger.classList.toggle('hamburger--active');
+            turn_Off_Mobile_Nav_Bar();
     });
 
     contactButton.on('click', function () {
@@ -55,8 +56,6 @@ $(document).ready(function () {
                 scrollTop: $(".contact").offset().top
             },
             'slow');
-            navigation.classList.toggle('nav--active');
-            navigation.classList.toggle('navigation');
-            hamburger.classList.toggle('hamburger--active');
+            turn_Off_Mobile_Nav_Bar();
     });
 })
