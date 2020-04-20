@@ -1,62 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,600i&display=swap&subset=latin-ext"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-     
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,600i&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <button class="hamburger">
-        <span class="hamburger__box">
-          <span class="hamburger__inner">
-          </span>
-        </span> 
-      </button>
-    
-
+      <span class="hamburger__box">
+        <span class="hamburger__inner"> </span>
+      </span>
+    </button>
 
     <div class="main">
+      <div class="logo-mobile">
+        <img src="img/logo.png" alt="logo" />
+      </div>
 
-        <div  class='logo-mobile'>
-            <img src="img/logo.png" alt="logo">
+      <nav class="navigation">
+        <ul>
+          <li><img src="img/logo.png" alt="logo" class="logo" /></li>
+          <li>
+            <a id="menu-start"><strong>Soft</strong> Start</a>
+          </li>
+          <li><a id="menu-product">Produkt</a></li>
+          <li><a id="menu-technical-data">Dane technicze</a></li>
+          <li><a id="menu-order">Zamów</a></li>
+          <li><a id="menu-contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <header></header>
+      <section class="product">
+        <!-- <div class="image-wrapper">
+          
+        </div> -->
+        <img src="./img/product_photo.png" alt="product photo" />
+        <div class="text-wrapper">
+          <h1>Produkt</h1>
+
+          <p>
+            <strong>SOFTSTART</strong> to urządzenie najnowszej generacji, które
+            dedykowane jest do opraw oświetleniowych typu LED, aby skutecznie
+            ograniczyć ich prąd rozruchowy.
+          </p>
+          <br />
+          <p>
+            Zmiana opraw konwencjonalnych na oprawy typu LED powoduje liczne
+            problemy na poziomie eksploatacji. Nowoczesne oprawy oświetleniowe
+            charakteryzują się znacznym prądem rozruchowym, co utrudnia właściwy
+            dobór zabezpieczeń głównych, jak i obwodowych. Przy zastosowaniu
+            SOFTSTARTU opartego na termistorowym układzie ograniczenia prądu
+            możliwe jest właściwe dobranie wielkości zabezpieczeń prądowych.
+            Dzięki skutecznej redukcji pików rozruchowych zabezpieczenia zostają
+            dobrane do wartości „nominalnej” prądów obciążenia.
+          </p>
+          <br />
+          <p>
+            Stosując urządzenia serii <strong>SOFTSTART</strong> uzyskuje się
+            zdolność do zmiany „mocy umownych” przy jednoczesnym zachowaniu
+            wysokiej sprawności układu.
+          </p>
         </div>
+      </section>
+      <section class="technical-data"></section>
+      <section class="order"></section>
+      <section class="contact"></section>
+      <footer></footer>
 
-        <nav class='navigation'>
-            <ul>
-                <li><img src="img/logo.png" alt="logo" class='logo'></li>
-                <li><a href="#" id="menu-start"><strong>Soft</strong> Start</a></li>
-                <li><a href="#" id='menu-product'>Produkt</a></li>
-                <li><a href="#" id='menu-technical-data'>Dane technicze</a></li>
-                <li><a href="#" id="menu-order">Zamów</a></li>
-                <li><a href="#" id='menu-contact'>Kontakt</a></li>
-
-            </ul>
-        </nav>
-        <header>
-
-        </header>
-        <section class="product">
-
-        </section>
-        <section class="technical-data"></section>
-        <section class='order'></section>
-        <section class='contact'></section>
-        <footer></footer>
-
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
-        <script src="js/ham_menu.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"
+      ></script>
+      <script src="js/script.js"></script>
+      <script src="js/ham_menu.js"></script>
     </div>
-</body>
-
+  </body>
 </html>
