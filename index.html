@@ -9,7 +9,9 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
 
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/316de72a8a.js" crossorigin="anonymous"></script>
+
+    <title>SoftStart</title>
   </head>
 
   <body>
@@ -71,7 +73,36 @@
       </section>
       <section class="technical-data"></section>
       <section class="order"></section>
-      <section class="contact"></section>
+
+      <section class="contact">
+        <h1>Formularz Kontaktowy:</h1>
+        
+        <form  id="contactForm" >
+          <div id="userName-field">
+            <i class="far fa-user"></i>
+            <input type="text" placeholder="Your name" required size="30" form="contactForm"> 
+            <i class="fas fa-arrow-down"></i>
+          </div>
+
+          <div id="email-field" class="innactive">
+            <i class="fas fa-at"></i>
+            <input type="email" placeholder="e-mail" required size="30" form="contactForm">
+            <i class="fas fa-arrow-down"></i>
+          </div>
+
+          <div id="message-field" class="innactive">
+            <i class="far fa-comment-alt"></i>
+            <textarea class='txtbox' type="text" placeholder="message" required form="contactForm"></textarea>
+            <i class="fas fa-paper-plane"></i> 
+          </div>
+
+          <div id="finish_field" class="finishField-innactive">
+            <a>Thank You!</a>
+            <i class="fas fa-check-circle"></i>
+          </div>
+        </form>
+
+      </section>
       <footer></footer>
 
       <script
@@ -81,6 +112,7 @@
       ></script>
       <script src="js/script.js"></script>
       <script src="js/ham_menu.js"></script>
+      <script src="js/form.js"></script>
     </div>
   </body>
 </html>
