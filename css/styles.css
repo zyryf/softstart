@@ -230,6 +230,170 @@ header::after {
   background-color: #1B1B1B;
   -webkit-transform: skew(0, 7deg);
           transform: skew(0, 7deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: background .5s ease;
+  transition: background .5s ease;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
+}
+
+.contact h1 {
+  -webkit-transform: skew(0, -7deg);
+          transform: skew(0, -7deg);
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+  margin: 20px;
+}
+
+.contact form {
+  -webkit-transform: skew(0, -7deg);
+          transform: skew(0, -7deg);
+}
+
+.contact div.innactive {
+  opacity: 0.3;
+  pointer-events: none;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.contact div.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.contact div.after-validation {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.finishField-innactive {
+  opacity: 0;
+  pointer-events: all;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+#userName-field,
+#email-field,
+#message-field,
+#finish_field {
+  background-color: #5afc5a;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#userName-field i,
+#email-field i,
+#message-field i,
+#finish_field i {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#userName-field input, #userName-field textarea,
+#email-field input,
+#email-field textarea,
+#message-field input,
+#message-field textarea,
+#finish_field input,
+#finish_field textarea {
+  background: none;
+  border: none;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+  text-align: justify;
+}
+
+#userName-field textarea,
+#email-field textarea,
+#message-field textarea,
+#finish_field textarea {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  resize: none;
+}
+
+#userName-field button,
+#email-field button,
+#message-field button,
+#finish_field button {
+  background: none;
+  border: none;
+}
+
+#userName-field ::-webkit-input-placeholder,
+#email-field ::-webkit-input-placeholder,
+#message-field ::-webkit-input-placeholder,
+#finish_field ::-webkit-input-placeholder {
+  color: black;
+  opacity: 0.5;
+  position: relative;
+  left: 10%;
+  border: none;
+  background: none;
+}
+
+#userName-field :-ms-input-placeholder,
+#email-field :-ms-input-placeholder,
+#message-field :-ms-input-placeholder,
+#finish_field :-ms-input-placeholder {
+  color: black;
+  opacity: 0.5;
+  position: relative;
+  left: 10%;
+  border: none;
+  background: none;
+}
+
+#userName-field ::-ms-input-placeholder,
+#email-field ::-ms-input-placeholder,
+#message-field ::-ms-input-placeholder,
+#finish_field ::-ms-input-placeholder {
+  color: black;
+  opacity: 0.5;
+  position: relative;
+  left: 10%;
+  border: none;
+  background: none;
+}
+
+#userName-field ::placeholder,
+#email-field ::placeholder,
+#message-field ::placeholder,
+#finish_field ::placeholder {
+  color: black;
+  opacity: 0.5;
+  position: relative;
+  left: 10%;
+  border: none;
+  background: none;
 }
 
 footer {
