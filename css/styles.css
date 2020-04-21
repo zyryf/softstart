@@ -340,6 +340,14 @@ header::after {
   resize: none;
 }
 
+#userName-field button,
+#email-field button,
+#message-field button,
+#finish_field button {
+  background: none;
+  border: none;
+}
+
 #userName-field ::-webkit-input-placeholder,
 #email-field ::-webkit-input-placeholder,
 #message-field ::-webkit-input-placeholder,

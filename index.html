@@ -77,28 +77,31 @@
       <section class="contact">
         <h1>Formularz Kontaktowy:</h1>
         
-        <form  id="contactForm" >
+        <form  id="contactForm" action="https://formspree.io/xbjavnjp"
+        method="POST">
           <div id="userName-field">
             <i class="far fa-user"></i>
-            <input type="text" placeholder="Your name" required size="30" form="contactForm"> 
+            <input type="text" name="name" placeholder="Your name" required size="30" form="contactForm"> 
             <i class="fas fa-arrow-down"></i>
           </div>
 
           <div id="email-field" class="innactive">
             <i class="fas fa-at"></i>
-            <input type="email" placeholder="e-mail" required size="30" form="contactForm">
+            <input type="email" name="_replyto" placeholder="e-mail" required size="30" form="contactForm">
             <i class="fas fa-arrow-down"></i>
           </div>
 
           <div id="message-field" class="innactive">
             <i class="far fa-comment-alt"></i>
-            <textarea class='txtbox' type="text" placeholder="message" required form="contactForm"></textarea>
-            <i class="fas fa-paper-plane"></i> 
+            <textarea class='txtbox' name="message" type="text" placeholder="message" required form="contactForm"></textarea>
+            <button type="submit" value="Send" form="contactForm">
+              <i class="fas fa-paper-plane"></i> 
+            </button>
           </div>
 
           <div id="finish_field" class="finishField-innactive">
             <a>Thank You!</a>
-            <i class="fas fa-check-circle"></i>
+              <i class="fas fa-check-circle"></i>
           </div>
         </form>
 
