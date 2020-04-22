@@ -9,7 +9,10 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
 
-    <script src="https://kit.fontawesome.com/316de72a8a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/316de72a8a.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>SoftStart</title>
   </head>
@@ -33,22 +36,20 @@
             <a id="menu-start"><strong>Soft</strong> Start</a>
           </li>
           <li><a id="menu-product">Produkt</a></li>
-          <li><a id="menu-technical-data">Dane technicze</a></li>
-          <li><a id="menu-order">Zamów</a></li>
+          <li><a id="menu-download">Pobierz</a></li>
+          <li><a id="menu-technical-data">Dane techniczne</a></li>
           <li><a id="menu-contact">Kontakt</a></li>
         </ul>
       </nav>
       <header></header>
       <section class="product">
-        <!-- <div class="image-wrapper">
-          
-        </div> -->
         <img src="./img/product_photo.png" alt="product photo" />
+
         <div class="text-wrapper">
           <h1>Produkt</h1>
 
           <p>
-            <strong>SOFTSTART</strong> to urządzenie najnowszej generacji, które
+            <strong>SOFTSTART</strong> to urządzenie najnowszej generacji,
             dedykowane jest do opraw oświetleniowych typu LED, aby skutecznie
             ograniczyć ich prąd rozruchowy.
           </p>
@@ -58,30 +59,60 @@
             problemy na poziomie eksploatacji. Nowoczesne oprawy oświetleniowe
             charakteryzują się znacznym prądem rozruchowym, co utrudnia właściwy
             dobór zabezpieczeń głównych, jak i obwodowych. Przy zastosowaniu
-            SOFTSTARTU opartego na termistorowym układzie ograniczenia prądu
-            możliwe jest właściwe dobranie wielkości zabezpieczeń prądowych.
-            Dzięki skutecznej redukcji pików rozruchowych zabezpieczenia zostają
-            dobrane do wartości „nominalnej” prądów obciążenia.
-          </p>
-          <br />
-          <p>
-            Stosując urządzenia serii <strong>SOFTSTART</strong> uzyskuje się
-            zdolność do zmiany „mocy umownych” przy jednoczesnym zachowaniu
-            wysokiej sprawności układu.
+            <strong>SOFTSTARTU</strong> opartego na termistorowym układzie
+            ograniczenia prądu możliwe jest właściwe dobranie wielkości
+            zabezpieczeń prądowych. Dzięki skutecznej redukcji pików
+            rozruchowych zabezpieczenia zostają dobrane do wartości „nominalnej”
+            prądów obciążenia.
           </p>
         </div>
       </section>
+      <section class="download">
+        <div class="wrapper">
+          <h1>Pobierz</h1>
+          <div class="grid-wrapper">
+            <div class="grid-element">
+              <h3>Schemat podłączenia</h3>
+              <a href="/data/schemat_podlaczenia.png" download=""
+                ><i class="fas fa-file-download"></i
+              ></a>
+            </div>
+            <div class="grid-element">
+              <h3>Karta Katalogowa</h3>
+              <a href="data/karta_katalogowa.pdf" download
+                ><i class="fas fa-file-download"></i
+              ></a>
+            </div>
+            <div class="grid-element">
+              <h3>Deklaracja zgodności</h3>
+              <a href="/data/deklaracja_zgodności.pdf" download
+                ><i class="fas fa-file-download"></i
+              ></a>
+            </div>
+            <div class="grid-element">
+              <h3>Rysunek techniczny</h3>
+              <a href="/data/rysunek_techniczny.dxf" download
+                ><i class="fas fa-file-download"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="technical-data"></section>
-      <section class="order"></section>
 
       <section class="contact">
         <h1>Formularz Kontaktowy:</h1>
-        
-        <form  id="contactForm" action="https://formspree.io/xbjavnjp"
-        method="POST">
+
+        <form
+          id="contactForm"
+          action="https://formspree.io/xbjavnjp"
+          method="POST"
+        >
           <div id="userName-field">
             <i class="far fa-user"></i>
+
             <input type="text" name="name" placeholder="Your name" required  form="contactForm"> 
+
             <i class="fas fa-arrow-down"></i>
           </div>
 
@@ -93,18 +124,24 @@
 
           <div id="message-field" class="innactive">
             <i class="far fa-comment-alt"></i>
-            <textarea class='txtbox' name="message" type="text" placeholder="message" required form="contactForm"></textarea>
+            <textarea
+              class="txtbox"
+              name="message"
+              type="text"
+              placeholder="message"
+              required
+              form="contactForm"
+            ></textarea>
             <button type="submit" value="Send" form="contactForm">
-              <i class="fas fa-paper-plane"></i> 
+              <i class="fas fa-paper-plane"></i>
             </button>
           </div>
 
           <div id="finish_field" class="finishField-innactive">
             <a>Thank You!</a>
-              <i class="fas fa-check-circle"></i>
+            <i class="fas fa-check-circle"></i>
           </div>
         </form>
-
       </section>
       <footer></footer>
 
