@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  min-width: 320px;
 }
 
 @media (max-width: 1000px) {
@@ -32,7 +33,6 @@ body {
     list-style: none;
   }
   .nav--active ul li {
-    width: 250px;
     margin-bottom: 60px;
     text-align: center;
   }
@@ -199,8 +199,9 @@ header::after {
             flex-direction: column;
   }
   .product img {
-    height: 55vh;
-    margin: 0px;
+    height: 300px;
+    width: 300px;
+    margin: auto;
   }
   .product .text-wrapper {
     width: 100%;
@@ -376,7 +377,7 @@ header::after {
 #finish_field {
   background-color: #5afc5a;
   padding: 5px;
-  margin: 10px;
+  margin: 10px auto 10px auto;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
