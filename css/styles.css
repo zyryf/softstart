@@ -315,15 +315,15 @@ header::after {
 }
 
 .contact {
-  height: 100vh;
+  padding: 50px 20px;
   background-color: #1B1B1B;
   -webkit-transform: skew(0, 7deg);
           transform: skew(0, 7deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: background .5s ease;
-  transition: background .5s ease;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -404,7 +404,8 @@ header::after {
   cursor: pointer;
 }
 
-#userName-field input, #userName-field textarea,
+#userName-field input,
+#userName-field textarea,
 #email-field input,
 #email-field textarea,
 #message-field input,
@@ -486,7 +487,30 @@ header::after {
 }
 
 footer {
-  height: 50vh;
+  text-align: center;
+  padding: 80px 10px;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  padding: 5px 0;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    padding: 40px 0;
+  }
+  footer h3 {
+    font-size: 1rem;
+  }
+  footer p {
+    padding: 3px 0;
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 1000px) {
