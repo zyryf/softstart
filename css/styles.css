@@ -128,10 +128,10 @@ header::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 120px;
+  height: 80px;
   width: 100%;
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
-          clip-path: polygon(0 0, 0 100%, 100% 100%);
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
 @media (max-width: 1000px) {
@@ -149,11 +149,7 @@ header::after {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-}
-
-.product .image-wrapper {
-  background-color: red;
-  text-align: center;
+  padding: 100px 0;
 }
 
 .product img {
@@ -165,8 +161,8 @@ header::after {
 .product .text-wrapper {
   width: 50%;
   padding: 30px;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
   color: #1B1B1B;
   text-align: justify;
   margin: 20px 0;
@@ -174,20 +170,25 @@ header::after {
 
 .product .text-wrapper h1 {
   margin: 25px;
-  font-size: 2.2rem;
+  font-size: 5.5rem;
   text-align: center;
+  margin-bottom: 90px;
 }
 
-.product::after {
-  content: "";
-  background-color: white;
-  position: absolute;
-  bottom: -120px;
-  left: 0;
-  height: 120px;
-  width: 100%;
-  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
-          clip-path: polygon(100% 0, 0 0, 100% 100%);
+@media (max-width: 1400px) {
+  .product {
+    padding: 20px 0;
+  }
+  .product img {
+    height: 400px;
+    margin-top: 100px;
+  }
+  .product .text-wrapper {
+    font-size: 1.2rem;
+  }
+  .product .text-wrapper h1 {
+    font-size: 4.5rem;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -203,25 +204,108 @@ header::after {
   }
   .product .text-wrapper {
     width: 100%;
-    font-size: 0.8rem;
-    line-height: 1.3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     margin: 0px;
   }
   .product .text-wrapper h1 {
-    font-size: 1.8rem;
+    font-size: 3.5rem;
   }
-  .product::after {
-    height: 60px;
-    bottom: -60px;
+}
+
+.download {
+  padding: 100px 0px;
+  background-color: #1B1B1B;
+  -webkit-transform: skew(0, 7deg);
+          transform: skew(0, 7deg);
+}
+
+.download .wrapper {
+  -webkit-transform: skew(0, -7deg);
+          transform: skew(0, -7deg);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.download .wrapper h1 {
+  font-size: 5.5rem;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.download .wrapper .grid-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.download .wrapper .grid-wrapper .grid-element {
+  width: 40%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.download .wrapper .grid-wrapper .grid-element h3 {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.download .wrapper .grid-wrapper .grid-element i {
+  color: white;
+  font-size: 5.2rem;
+}
+
+@media (max-width: 1400px) {
+  .download .wrapper h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+  }
+  .download .wrapper .grid-wrapper .grid-element {
+    padding: 35px 0;
+  }
+  .download .wrapper .grid-wrapper .grid-element h3 {
+    font-size: 1.5rem;
+  }
+  .download .wrapper .grid-wrapper .grid-element i {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .download .wrapper h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  .download .wrapper .grid-wrapper .grid-element {
+    padding: 20px 0;
+  }
+  .download .wrapper .grid-wrapper .grid-element h3 {
+    font-size: 1rem;
+  }
+  .download .wrapper .grid-wrapper .grid-element i {
+    font-size: 3rem;
   }
 }
 
 .technical-data {
-  height: 100vh;
-  background-color: #1B1B1B;
-}
-
-.order {
   height: 100vh;
 }
 
