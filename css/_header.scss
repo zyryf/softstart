@@ -2,6 +2,12 @@ header {
   height: 100vh;
   width: 100%;
   background-image: url("../img/header_background.jpg");
+  font-family: 'Anton', sans-serif;
+
+  
+
+  
+
 
   margin: auto;
   background-position: 0 30%;
@@ -20,6 +26,37 @@ header {
     width: 100%;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   }
+
+  div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba($color: #000000, $alpha: .30);
+  }
+
+  h1 {
+    position: relative;
+    top: 25%;
+    
+    
+    font-size: 15vh;
+  }
+}
+
+.first-line{
+
+  color: white;
+  left: 10%;
+
+}
+.second-line{
+  
+  color: #33c733;
+  left: 15%;
 }
 
 @media (max-width: 1000px) {
