@@ -214,7 +214,8 @@ header::after {
     margin: 0px;
   }
   .product .text-wrapper h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    margin: 20px;
   }
 }
 
@@ -296,7 +297,7 @@ header::after {
 
 @media (max-width: 1000px) {
   .download .wrapper h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
   }
   .download .wrapper .grid-wrapper .grid-element {
@@ -310,8 +311,94 @@ header::after {
   }
 }
 
-.technical-data {
-  height: 100vh;
+.technical-data h1 {
+  font-size: 5.5rem;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.technical-data .technical-data-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.technical-data .technical-data-wrapper .carousel {
+  padding: 10px;
+  width: 30%;
+}
+
+.technical-data .technical-data-wrapper .carousel .carousel-item img {
+  height: 400px;
+  margin: 0 auto;
+}
+
+.technical-data .technical-data-wrapper .carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.technical-data .technical-data-wrapper .carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.technical-data .technical-data-wrapper ul {
+  width: 40%;
+  list-style: none;
+}
+
+.technical-data .technical-data-wrapper ul li {
+  font-size: 1.3rem;
+  margin: 5px;
+}
+
+.technical-data .technical-data-wrapper ul li i {
+  margin-right: 10px;
+}
+
+@media (max-width: 1400px) {
+  .technical-data h1 {
+    font-size: 4.5rem;
+  }
+  .technical-data .technical-data-wrapper .carousel {
+    width: 45%;
+  }
+  .technical-data .technical-data-wrapper ul li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .technical-data h1 {
+    font-size: 2.5rem;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .technical-data .technical-data-wrapper {
+    margin-bottom: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .technical-data .technical-data-wrapper .carousel {
+    width: 100%;
+    padding: 20px;
+  }
+  .technical-data .technical-data-wrapper .carousel img.wymiary {
+    width: 370px;
+  }
+  .technical-data .technical-data-wrapper ul {
+    width: 100%;
+    padding: 25px;
+  }
+  .technical-data .technical-data-wrapper ul li {
+    font-size: 1rem;
+  }
 }
 
 .contact {
@@ -341,7 +428,7 @@ header::after {
   -webkit-transform: skew(0, -7deg);
           transform: skew(0, -7deg);
   color: white;
-  font-size: 5vw;
+  font-size: 5.5rem;
   text-align: center;
   margin: 20px;
 }
@@ -486,9 +573,21 @@ header::after {
   background: none;
 }
 
+@media (max-width: 1400px) {
+  .contact {
+    padding: 80px 0;
+  }
+  .contact h1 {
+    font-size: 4.5rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .contact {
     padding: 80px 0;
+  }
+  .contact h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -508,7 +607,7 @@ footer p {
 
 @media (max-width: 1000px) {
   footer {
-    padding: 40px 0;
+    padding: 40px 15px;
   }
   footer h3 {
     font-size: 1rem;
