@@ -2,12 +2,7 @@ header {
   height: 100vh;
   width: 100%;
   background-image: url("../img/header_background.jpg");
-  font-family: 'Anton', sans-serif;
-
-  
-
-  
-
+  font-family: "Anton", sans-serif;
 
   margin: auto;
   background-position: 0 30%;
@@ -35,27 +30,23 @@ header {
     height: 100%;
     width: 100%;
 
-    background-color: rgba($color: #000000, $alpha: .30);
+    background-color: rgba($color: #000000, $alpha: 0.3);
   }
 
   h1 {
     position: relative;
     top: 25%;
-    
-    
-    font-size: 15vh;
+    font-family: "Righteous", cursive;
+    font-size: 13vh;
   }
 }
 
-.first-line{
-
+.first-line {
   color: white;
   left: 10%;
-
 }
-.second-line{
-  
-  color: #33c733;
+.second-line {
+  color: #abdf27;
   left: 15%;
 }
 

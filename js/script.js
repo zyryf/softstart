@@ -7,6 +7,7 @@ $(document).ready(function () {
   const contactButton = $("#menu-contact");
   const navigation = document.querySelector(".navigation");
   const hamburger = document.querySelector(".hamburger");
+  const logoMobile = $(".logo-mobile");
 
   function turn_Off_Mobile_Nav_Bar() {
     if (document.body.clientWidth < 1000) {
@@ -15,6 +16,15 @@ $(document).ready(function () {
       hamburger.classList.toggle("hamburger--active");
     }
   }
+
+  logoMobile.on("click", function () {
+    $("html,body").animate(
+      {
+        scrollTop: $("header").offset().top,
+      },
+      "slow"
+    );
+  });
 
   startButton.on("click", function () {
     $("html,body").animate(

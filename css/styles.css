@@ -49,10 +49,10 @@ body {
     margin: 0px 30px;
     padding: 5px 15px;
     background-color: transparent;
-    color: white;
-    -webkit-transition: .5s;
-    transition: .5s;
-    font-family: 'Montserrat', sans-serif;
+    color: white !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-family: "Montserrat", sans-serif;
     border: none;
     border-bottom: 1px solid transparent;
     text-transform: uppercase;
@@ -90,6 +90,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 0px;
   }
   .navigation ul .logo {
     height: 20px;
@@ -100,10 +101,10 @@ body {
     margin: 0px 30px;
     padding: 5px 15px;
     background-color: transparent;
-    color: white;
-    -webkit-transition: .5s;
-    transition: .5s;
-    font-family: 'Montserrat', sans-serif;
+    color: white !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-family: "Montserrat", sans-serif;
     border: none;
     border-bottom: 1px solid transparent;
     text-transform: uppercase;
@@ -118,7 +119,7 @@ header {
   height: 100vh;
   width: 100%;
   background-image: url("../img/header_background.jpg");
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   margin: auto;
   background-position: 0 30%;
   background-size: cover;
@@ -161,7 +162,8 @@ header div {
 header h1 {
   position: relative;
   top: 25%;
-  font-size: 15vh;
+  font-family: "Righteous", cursive;
+  font-size: 13vh;
 }
 
 .first-line {
@@ -170,7 +172,7 @@ header h1 {
 }
 
 .second-line {
-  color: #33c733;
+  color: #abdf27;
   left: 15%;
 }
 
@@ -205,14 +207,14 @@ header h1 {
   line-height: 1.8rem;
   color: #1B1B1B;
   text-align: justify;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .product .text-wrapper h1 {
   margin: 25px;
   font-size: 5.5rem;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1400px) {
@@ -279,12 +281,13 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-decoration: none;
 }
 
 .download .wrapper h1 {
   font-size: 5.5rem;
   color: white;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .download .wrapper .grid-wrapper {
@@ -301,7 +304,12 @@ header h1 {
 .download .wrapper .grid-wrapper .grid-element {
   width: 40%;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 20px;
+}
+
+.download .wrapper .grid-wrapper .grid-element a {
+  text-decoration: none;
+  display: block;
 }
 
 .download .wrapper .grid-wrapper .grid-element h3 {
@@ -347,10 +355,14 @@ header h1 {
   }
 }
 
+.technical-data {
+  padding-top: 100px;
+}
+
 .technical-data h1 {
   font-size: 5.5rem;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -409,10 +421,14 @@ header h1 {
 }
 
 @media (max-width: 1000px) {
+  .technical-data {
+    padding-top: 40px;
+  }
   .technical-data h1 {
     font-size: 2.5rem;
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 30px;
+    padding: 0 20px;
   }
   .technical-data .technical-data-wrapper {
     margin-bottom: 50px;
@@ -620,7 +636,7 @@ header h1 {
 
 @media (max-width: 1000px) {
   .contact {
-    padding: 80px 0;
+    padding: 60px 0;
   }
   .contact h1 {
     font-size: 2.5rem;
@@ -651,6 +667,15 @@ footer p {
   footer p {
     padding: 3px 0;
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  footer h3 {
+    font-size: 0.9rem;
+  }
+  footer p {
+    margin-bottom: 0px;
   }
 }
 
