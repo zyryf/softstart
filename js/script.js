@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  $(".loader-wrapper").fadeOut("slow");
-
   //getting start menu button from DOM
   const startButton = $("#menu-start");
   const productButton = $("#menu-product");
