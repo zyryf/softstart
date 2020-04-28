@@ -28,9 +28,9 @@ function animatedForm() {
 }
 
 function validateUser(user, parent) {
-  if (user.value.length < 6) {
+  if (user.value.length < 3) {
     error(parent);
-    alert("Nazwa musi byc złożona z co najmniej 6 znaków");
+    alert("Nazwa musi byc złożona z co najmniej 3 znaków");
     return false;
   } else {
     return true;
