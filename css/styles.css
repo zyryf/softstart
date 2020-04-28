@@ -573,6 +573,15 @@ header h1 {
   }
 }
 
+@media (max-width: 360px) {
+  .technical-data .technical-data-wrapper .carousel .carousel-item img {
+    height: 330px;
+  }
+  .technical-data .technical-data-wrapper .carousel img.wymiary {
+    width: 290px;
+  }
+}
+
 .contact {
   padding: 150px 20px;
   background-color: #1B1B1B;

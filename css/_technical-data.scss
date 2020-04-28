@@ -90,3 +90,20 @@
     }
   }
 }
+
+@media (max-width: 360px) {
+  .technical-data {
+    .technical-data-wrapper {
+      .carousel {
+        .carousel-item {
+          img {
+            height: 330px;
+          }
+        }
+        img.wymiary {
+          width: 290px;
+        }
+      }
+    }
+  }
+}
