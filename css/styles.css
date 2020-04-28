@@ -237,6 +237,7 @@ body {
 
 header {
   height: 100vh;
+  min-height: 800px;
   width: 100%;
   background-image: url("../img/header_background.jpg");
   font-family: "Anton", sans-serif;
