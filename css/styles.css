@@ -772,6 +772,16 @@ header h1 {
   }
 }
 
+input:focus {
+  border: none;
+  outline: none;
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
+}
+
 footer {
   text-align: center;
   padding: 80px 10px;
@@ -919,5 +929,10 @@ footer p {
 .hamburger--active .hamburger__inner:after {
   -webkit-transform: rotate(45deg) translateY(-10px);
           transform: rotate(45deg) translateY(-10px);
+}
+
+button:focus {
+  border: none;
+  outline: none;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -73,6 +73,7 @@
     font-weight: bold;
     font-size: large;
     text-align: justify;
+    
   }
 
   textarea {
@@ -113,4 +114,14 @@
       font-size: 2.5rem;
     }
   }
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
 }

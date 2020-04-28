@@ -2,12 +2,26 @@ function animatedForm() {
   const arrows = document.querySelectorAll(".fa-arrow-down");
   const sendButton = document.querySelector(".fa-paper-plane");
 
-  arrows.forEach((arrow) => {
-    arrow.addEventListener("click", () => {
-      const input = arrow.previousElementSibling;
-      const parent = arrow.parentElement;
-      const nextForm = parent.nextElementSibling;
 
+
+  arrows.forEach((arrow) => {
+    const input = arrow.previousElementSibling;
+    const parent = arrow.parentElement;
+    const nextForm = parent.nextElementSibling;
+
+    //when user click "enter", go to next input
+    input.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        if (input.type === "text" && validateUser(input, parent)) {
+          nextSlide(parent, nextForm);
+        } else if (input.type === "email" && validateEmail(input, parent)) {
+          nextSlide(parent, nextForm);
+        }
+      }
+    });
+
+    //when user click "arrow", go to next input
+    arrow.addEventListener("click", () => {
       if (input.type === "text" && validateUser(input, parent)) {
         nextSlide(parent, nextForm);
       } else if (input.type === "email" && validateEmail(input, parent)) {
@@ -16,6 +30,7 @@ function animatedForm() {
     });
   });
 
+  
   sendButton.addEventListener("click", () => {
     const input = sendButton.previousElementSibling;
     const parent = sendButton.parentElement;

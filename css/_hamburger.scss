@@ -13,6 +13,8 @@ $inner__color: rgb(80, 145, 80);
     right: 20px;
     top: 20px;
     z-index: 2;
+    
+    
     @media(min-width: 1000px){
         display: none;
     }
@@ -81,4 +83,9 @@ $inner__color: rgb(80, 145, 80);
     transform:  rotate(45deg) translateY(-10px);
   
   }
+
+  button:focus {
+    border: none;
+    outline: none;
+}
   
